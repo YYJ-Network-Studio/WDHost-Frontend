@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>水滴託管｜知識庫</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="../index.html" class="title">水滴託管 WDHost</a>
+				<nav>
+					<ul>
+						<li><a href="../index.html">首頁</a></li>
+						<li><a href="../taiwan.html">台灣伺服器</a></li>
+						<li><a href="../foreign.html">外國伺服器</a></li>
+						<li><a href="../ddos.html">DDoS防禦</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">知識庫</h1>
+							<p>不用擔心伺服器太難使用，這裡一步一步的教您如何使用伺服器，善用Ctrl + F找尋您要的關鍵字吧!</p>
+							<h3>目錄</h3>
+							<p>後台指令、檔案操控教學 - <a href="1.html">點擊此閱讀</a></p>
+							<p>網站架設教學 - <a href="2.html">點擊此閱讀</a></p>
+							<p>Minecraft伺服器架設教學 - <a href="3.html">點擊此閱讀</a></p>
+                            <h3>網頁伺服器架設軟體</h3>
+                            <p>常見的網頁伺服器架設軟體有Apache及Nginx，作者我是推薦Nginx，選擇原因不在這裡多做陳述，想深入瞭解的話請看此文章：<a href="https://blog.beck-yeh.idv.tw/linux/web-server/nginx-vs-apache/">Apache vs Nginx該選哪個(中文文章)</a></p>
+                            <h3>Nginx安裝教學</h3>
+							<p>1. 使用SSH連線至伺服器後台，登入後輸入下載Nginx指令</p><code>sudo apt install nginx</code>
+                            <blockquote>
+							給新手的小幫助：sudo可以想成進入最高管理權限的按鈕(最高管理權限以下稱之為root)，
+							只有root才能對系統做完整的更動，像是下載資料、帳戶更動等具有一定風險性的操作。因此，
+							如果尚未進入root模式就打算下載資料，需要在開頭加上sudo，然後系統會要求輸入root密碼(密碼不會顯示，輸入完後按下Enter即可)，
+							才可進行資料下載喔！
+							</blockquote>
+                            <p>2. 下載與安裝完畢後，開啟伺服器請輸入：<code>sudo systemctl start nginx</code></p>
+                            <p>3. 此時打開電腦或手機等裝置的瀏覽器，輸入伺服器連線位置(IP)即可瀏覽網站！</p>
+							<span class="image fit"><img src="images/nginx.png" alt="" /></span>
+							<p>如果架設成功且連線位置(IP)輸入正確的話，你會在瀏覽器看見以上畫面。</p>
+                            <h3>更改網站內容</h3>
+                            <p>1. 移動至網站內容的存放路徑<code>cd /var/www/html</code></p>
+                            <p>2. <code>index.html</code>代表網站的首頁，若要更改網站首頁，最簡單的方式就是將檔名更改為<code>index.html</code></p>
+                            <p>3. 將前端檔案(HTML, CSS, JavaScript, 照片, 影片等)上傳至此(使用FTP或SFTP)，並重啟伺服器即可！</p>
+                            <blockquote>
+							給新手的小幫助：不知道前端檔案(HTML, CSS, JavaScript)是什麼？
+							簡單來講，就是網頁的程式碼(不過HTML算是標籤語言，不是程式語言)，
+							這3個語言(HTML, CSS, JavaScript)，一個是架構、一個是美化、一個是增加一些動作&動畫，
+							如果想深入瞭解的話請看此文章：<a href="https://ithelp.ithome.com.tw/articles/10202326">網頁前端3語言</a>
+							</blockquote>
+                            <p>4. 重新啟動網頁伺服器<code>sudo systemctl restart nginx</code></p>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>2022 &copy; WDHost</li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>水滴託管｜知識庫</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="../index.html" class="title">水滴託管 WDHost</a>
+				<nav>
+					<ul>
+						<li><a href="../index.html">首頁</a></li>
+						<li><a href="../taiwan.html">台灣伺服器</a></li>
+						<li><a href="../foreign.html">外國伺服器</a></li>
+						<li><a href="../ddos.html">DDoS防禦</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">知識庫</h1>
+							<p>不用擔心伺服器太難使用，這裡一步一步的教您如何使用伺服器，善用Ctrl + F找尋您要的關鍵字吧!</p>
+							<h3>目錄</h3>
+							<p>後台指令、檔案操控教學 - <a href="1.html">點擊此閱讀</a></p>
+							<p>網站架設教學 - <a href="2.html">點擊此閱讀</a></p>
+							<p>Minecraft伺服器架設教學 - <a href="3.html">點擊此閱讀</a></p>
+                            <h3>Minecraft伺服器架設核心</h3>
+                            <p>以下內容適用Java伺服器。目前常見的伺服器架設核心有Spigot, Paper, PurPur，多數的插件都支援以上3款核心，本次教學以Paper示範，選擇的原因就不多介紹，有興趣的話請上網查。</p>
+                            <h3>原版伺服器架設教學</h3>
+                            <p>1. Minecraft需要依賴Java，因此請先安裝Java<code>sudo apt install openjdk-8-jdk</code></p>
+                            <blockquote>
+                            給新手的小幫助：1.17以下版本使用Java 8即可，1.17使用Java 16，1.18使用Java 17。
+							<details>
+								<summary>點擊查看各Java版本的下載指令</summary>
+								<li>安裝Java 8：<code>sudo apt install openjdk-8-jdk</code></li>
+								<li>安裝Java 16：<code>sudo apt install openjdk-16-jdk</code></li>
+								<li>安裝Java 17：<code>sudo apt install openjdk-17-jdk</code></li>	
+							</details>
+                            </blockquote>
+                            <p>2. 下載伺服器核心<code>wget 下載連結</code></p>
+                            <blockquote>
+                            Paper支援以下Minecraft版本(請將下載連結輸入在wget空格的後面，按下Enter將會開始下載)：
+							<details>
+								<summary>點擊查看各Paper版本的下載連結</summary>
+								<li>1.18.2：https://api.papermc.io/v2/projects/paper/versions/1.18.2/builds/372/downloads/paper-1.18.2-379.jar</li>									<li>1.17.1：https://api.papermc.io/v2/projects/paper/versions/1.17.1/builds/411/downloads/paper-1.17.1-411.jar</li>
+								<li>1.16.5：https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar</li>
+								<li>1.15.2：https://api.papermc.io/v2/projects/paper/versions/1.15.2/builds/393/downloads/paper-1.15.2-393.jar</li>
+                        		<li>1.14.2：https://api.papermc.io/v2/projects/paper/versions/1.14.4/builds/245/downloads/paper-1.14.4-245.jar</li>
+                        		<li>1.13.2：https://api.papermc.io/v2/projects/paper/versions/1.13.2/builds/657/downloads/paper-1.13.2-657.jar</li>
+                        		<li>1.12.2：https://api.papermc.io/v2/projects/paper/versions/1.12.2/builds/1620/downloads/paper-1.12.2-1620.jar</li>
+                        		<li>1.11.2：https://api.papermc.io/v2/projects/paper/versions/1.11.2/builds/1106/downloads/paper-1.11.2-1106.jar</li>
+                        		<li>1.10.2：https://api.papermc.io/v2/projects/paper/versions/1.10.2/builds/918/downloads/paper-1.10.2-918.jar</li>
+                            	<li>1.9.4：https://api.papermc.io/v2/projects/paper/versions/1.9.4/builds/775/downloads/paper-1.9.4-775.jar</li>
+                            	<li>1.8.8：https://api.papermc.io/v2/projects/paper/versions/1.8.8/builds/445/downloads/paper-1.8.8-445.jar</li>
+							</details>
+                            範例：<code>wget https://api.papermc.io/v2/projects/paper/versions/1.18.2/builds/372/downloads/paper-1.18.2-379.jar</code>
+                            </blockquote>
+                            <p>3. 執行伺服器核心<code>java -Xmx1024M -Xms1024M -jar 伺服器核心名稱.jar</code></p>
+                            <blockquote>
+                            給新手的小幫助：
+                            <br>執行1.18.2<code>java -Xmx1024M -Xms1024M -jar paper-1.18.2-379.jar -Dlog4j2.formatMsgNoLookups=true</code>
+							<br>1024MB = 1GB以此類推，您也可以改成<code>-Xmx1G -Xms1G</code>
+							<br>防止Log4j漏洞請加上<code>-Dlog4j2.formatMsgNoLookups=true</code>
+                            <br>請注意伺服器主機的RAM，假設您購買的伺服器為8G RAM，則分配給Minecraft伺服器的RAM必須小於8G RAM。
+                            </blockquote>
+                            <p>4. 同意eula條款<code>vi eula.txt</code>將false更改為true</p>
+                            <blockquote>
+                            給新手的小幫助：vi是Linux的文字編輯指令，執行指令後，
+                            按下鍵盤的i即可開始更改內容。更改後，請按下鍵盤的esc並輸入:wq存檔即可。
+                            </blockquote>
+                            <p>5. 再次執行伺服器核心<code>java -Xmx1024M -Xms1024M -jar 伺服器核心名稱.jar</code></p>
+                            <p>6. 在Minecraft遊戲中輸入伺服器連線位置(IP)，即可連線至伺服器！</p>
+							<h3>每當SSH連線關閉Minecraft伺服器也會關閉，如何解決？</h3>
+							<p>只需要讓Minecraft伺服器在Screen裡執行即可。</p>
+							<p>1. 首先，創建Screen<code>screen -S 名稱</code></p>
+							<p>2. 進入指定的Screen<code>screen -r 名稱</code></p>
+							<p>3. 進入指定的Screen後，您就可以執行Minecraft伺服器啟動的指令或.sh腳本</p>
+							<p>4. 使用Ctrl + A + D快捷鍵離開Screen</p>
+							<blockquote>
+							給新手小幫助：忘記Screen名稱的話，輸入<code>screen -ls</code>即可查看名稱和ID(您可以使用ID進入Screen)。
+							</blockquote>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>2022 &copy; WDHost</li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
