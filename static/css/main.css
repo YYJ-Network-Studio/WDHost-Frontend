@@ -194,10 +194,10 @@ input, select, textarea {
 		}
 
 			h1.major:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -moz-linear-gradient(to right, #00BB00, #0066CC);
+				background-image: -webkit-linear-gradient(to right, #00BB00, #0066CC);
+				background-image: -ms-linear-gradient(to right, #00BB00, #0066CC);
+				background-image: linear-gradient(to right, #00BB00, #0066CC);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -3200,6 +3200,7 @@ input, select, textarea {
 
 	.wrapper {
 		position: relative;
+		background-color: #272727;
 	}
 
 		.wrapper > .inner {
@@ -3232,8 +3233,8 @@ input, select, textarea {
 
 			}
 
-		.wrapper.alt {
-			background-color: #0080FF;
+		.wrapper.alt { /* Footer */
+			background-color: #1B1B1B;
 		}
 
 		.wrapper.style1 {
@@ -3244,7 +3245,7 @@ input, select, textarea {
 			background-color: #003060;
 		}
 
-		.wrapper.style2 { /* 服務項目 */
+		.wrapper.style2 {
 			background-color: #2894FF;
 		}
 
@@ -3252,7 +3253,7 @@ input, select, textarea {
 			background-color: #2894FF;
 		}
 
-		.wrapper.style3 { /* 為什麼選擇水滴託管 */
+		.wrapper.style3 {
 			background-color: #019858;
 		}
 
@@ -3367,7 +3368,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #2471A3;
+		background-color: #1B1B1B;
 		cursor: default;
 		padding: 1.75em 2em;
 	}
