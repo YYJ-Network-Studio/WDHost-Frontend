@@ -1,0 +1,8 @@
+@media (max-width: 600px) {
+    footer .contact {
+        top: 100%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+}
