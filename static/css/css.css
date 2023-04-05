@@ -4,13 +4,6 @@
 
 /* Basic label */
 
-a {
-    color: #6CA0DC;
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: none;
-}
 i {
     margin: 0 auto;
 }
@@ -37,34 +30,42 @@ code {
     padding: 5px;
     color: white;
     border-radius: 5px;
+    text-decoration: none;
     background-color: #6CA0DC;
 }
-.intro h1, p {
+.sidebar a:hover {
+    text-decoration: none;
+}
+.container h1, p {
+    color: white;
     text-align: center;
 }
 .col-sm-6 {
     max-width: 95%;
 }
 .col-sm-6, .col-lg-3 {
-    border-color: #6CA0DC;
+    margin: 10px;
+    height: 300px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background-color: #1B1B1B;
 }
 .col-sm-6 h2, .col-lg-3 h2 {
     font-weight: bold;
 }
-.col-sm-6, .col-lg-3 {
-    padding: 20px;
-    color: white;
-    border-radius: 5px;
-    background-color: #1B1B1B;
+.col-sm-6 span, .col-lg-3 span {
+    color: gainsboro;
 }
-.col-sm6, .col-lg-3 button {
-    border: 0;
-    width: 150px;
-    height: 40px;
-    margin-top: 10px;
-    border-radius: 5px;
-    transition-duration: 0.5s;
+button {
+    border: none;
+    padding: 5px;
+    margin-top: 20px;
     background-color: #6CA0DC;
+}
+button:hover {
+    transition: 1s;
+    background-color: #3498DB;
 }
 
 /* Footer */
