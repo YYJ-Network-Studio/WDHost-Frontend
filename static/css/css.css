@@ -57,15 +57,25 @@ code {
 .col-sm-6 span, .col-lg-3 span {
     color: gainsboro;
 }
-button {
-    border: none;
+.d-flex.flex-column {
+    justify-content: space-between;
+}
+.d-flex.flex-column > a { /* <a> position */
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+.col-sm-6 a, .col-lg-3 a {
+    width: 200px;
     padding: 5px;
-    margin-top: 20px;
+    color: white;
+    margin: 0 auto;
     background-color: #6CA0DC;
 }
-button:hover {
+.col-sm-6 a:hover, .col-lg-3 a:hover {
+    color: white;
     transition: 1s;
-    background-color: #3498DB;
+    text-decoration: none;
+    background-color: #415A8B;
 }
 
 /* Footer */
