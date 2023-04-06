@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <!--YYJ Network Studio Website-->
+	<title>DNS無法使用的特徵以及解決辦法</title>
+	<!--meta > charset-->
+	<meta charset="utf-8">
+	<!--meta > http-equiv-->
+	<meta http-equiv="content-language" content="zh-TW">
+	<!--meta > name-->
+	<meta name="author" content="YYJ">
+	<meta name="distribution" content="Taiwan">
+	<meta name="revisit-after" content="3 days">
+	<meta name="copyright" content="2023 © YYJ Network Studio">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Keywords -->
+	<meta name="keywords" Lang="zh-TW" content="水滴託管,水滴託管教學文,水滴託管技術文,DNS錯誤,DNS無法使用,更改DNS">
+	<!-- Description -->
+	<meta name="description" content="">
+	<!--link > rel-->
+	<link rel="icon" href="../static/images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="../static/css/rwd.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/article.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+	<h1>DNS無法使用的特徵以及解決辦法</h1>
+	<div class="article-line"></div>
+	<div class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-12" style="text-align: left;">
+                <h3>台灣VPS用戶注意</h3>
+                <p>曾有幾位用戶回報DNS無法使用，請先嘗試重啟主機，有部分用戶重啟後即可解決。</p>
+				<h3>常見DNS錯誤造成無法使用網路的特徵</h3>
+                <p>使用<code>apt install</code>顯示<code>Temporary failure resolving 'tw.archive.ubuntu.com'</code></p>
+                <p>使用<code>ping google.com</code>顯示<code>ping: Temporary failure in name resolution</code></p>
+                <p>給新手的小知識：DNS無法使用，代表無法解析域名(Domain)，假如Ping的是IP，依然可以正常運作。</p>
+                <h3>如何解決</h3>
+                <p>輸入<code>resolvectl status</code><p>
+                </p><code>Current DNS Server:</code>代表目前使用的DNS Server</p>
+                <p><code>DNS Servers:</code>第一個IP代表主要DNS Server，第二個代表次要DNS Server</p>
+                <p>推薦使用Google的DNS，主要DNS：8.8.8.8，次要DNS：8.8.4.4</p>
+                <h3>使用Netplan更改DNS Server</h3>
+                <p>輸入<code>nano /etc/netplan/00-installer-config.yaml</code>編輯檔案</p>
+                <p>在Interface(例如：eth0, enp7s0, ens18)裡面新增nameservers(請注意縮排)</p>
+                <code>nameservers:<br>(這裡要空4格)address: [8.8.8.8, 8.8.4.4]</code>
+                <p>儲存修改後，輸入<code>netplan apply</code>就完成DNS更改了。</p>
+                <p>有任何關於這方面的問題，歡迎聯絡客服：</p>
+                <p>Discord：YYJ#6116</p>
+                <p>Discord社群：<a href="dc.yyjstudio.com">點我</a></p>
+                <p>Email：yyj@yyjstudio.com</p>
+            </div>
+		</div>
+	</div>
+	</footer>
+	<script src="https://kit.fontawesome.com/098165415c.js" crossorigin="anonymous"></script>
+</body>
