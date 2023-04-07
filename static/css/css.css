@@ -28,7 +28,6 @@ code {
 .sidebar a {
     padding: 5px;
     color: white;
-    border-radius: 5px;
     text-decoration: none;
     background-color: #6CA0DC;
 }
@@ -90,4 +89,21 @@ code {
 footer {
     color: white;
     background-color: #1B1B1B;
+}
+footer .footer-social-media a {
+    width: 35px;
+    height: 35px;
+    color: white;
+    font-size: 20px;
+    margin-left: 3px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    transition: all .25s;
+    display: inline-block;
+    background-color: #33383B;
+}
+footer .footer-social-media a:hover {
+    transform: scale(1.1); 
+    -webkit-transform: scale(1.1);
 }
