@@ -3904,3 +3904,15 @@ input, select, textarea {
 			}
 
 		}
+/* Feature */
+.service, .green-energy {
+	width: 50%;
+	padding: 10px;
+	display: inline-block;
+}
+.green-energy {
+	float: left;
+}
+.clear {
+	clear: both;
+}
