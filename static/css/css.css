@@ -16,12 +16,11 @@ code {
 /* Sidebar, Service block */
 
 .sidebar {
-    top: 0;
-    left: 0;
+    width: 100%;
     padding: 20px;
-    display: flex;
-    position: fixed;
-    align-items: center;
+}
+.sidebar .right {
+    float: right;
 }
 .sidebar i {
     padding-right: 10px;
@@ -35,6 +34,14 @@ code {
 }
 .sidebar a:hover {
     text-decoration: none;
+}
+.container .wdhost {
+    background: linear-gradient(to right, #5DADE2, #2ECC71);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .container h1, p {
     color: white;
