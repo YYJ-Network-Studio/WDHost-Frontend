@@ -87,6 +87,7 @@ code {
 /* Footer */
 
 footer {
+    padding: 10px;
     color: white;
     background-color: #1B1B1B;
 }
@@ -106,4 +107,9 @@ footer .footer-social-media a {
 footer .footer-social-media a:hover {
     transform: scale(1.1); 
     -webkit-transform: scale(1.1);
+}
+footer hr {
+    width: 100px;
+    margin-right: 0;
+    border-top: 2px solid #4DCDFF;
 }
