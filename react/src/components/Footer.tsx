@@ -44,7 +44,7 @@ function Footer() {
                     <div className="md:flex md:justify-between">
                         <div className="mb-6 md:mb-0">
                             <a href="https://waterdroplet.net" className="flex items-center">
-                                <img src="src/img/favicon.ico" className="h-8 mr-3 rounded" alt="水滴託管 WD Host Logo" />
+                                <img src="https://yyjstudio.com/static/images/wdhost/favicon.ico" className="h-8 mr-3 rounded" alt="水滴託管 WD Host Logo" />
                                 <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">水滴託管 WD Host</span>
                             </a>
                             <p className="text-gray-300 mt-4">服務時間：10:00 AM 至 8:00 PM</p>

@@ -21,7 +21,7 @@ function Navbar() {
         <nav className="bg-white dark:bg-zinc-950 w-full z-20 top-0 left-0">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="https://waterdroplet.net" className="flex items-center">
-                    <img src="src/img/favicon.ico" className="h-8 mr-3 rounded" alt="水滴託管 WD Host Logo" />
+                    <img src="https://yyjstudio.com/static/images/wdhost/favicon.ico" className="h-8 mr-3 rounded" alt="水滴託管 WD Host Logo" />
                     <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">水滴託管 WD Host</span>
                 </a>
                         
