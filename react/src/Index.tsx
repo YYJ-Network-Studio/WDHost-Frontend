@@ -1,5 +1,7 @@
-import React from 'react'
-import './styles/index.css'
+import React from 'react';
+// components and styles
+import './styles/index.css';
+import Footer from './components/Footer';
 
 function Index() {
 
@@ -70,6 +72,7 @@ function Index() {
                     </div>
                 </div>
             </div>
+            <Footer />
         </>
     );
 }
