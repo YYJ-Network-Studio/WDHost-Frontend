@@ -1,6 +1,7 @@
 import React from 'react';
 // components and styles
 import './styles/index.css';
+import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 function Index() {
@@ -34,6 +35,7 @@ function Index() {
 
     return (
         <>
+            <Navbar />
             <div className='bg-neutral-900 px-5 py-10'>
                 <div className='container mx-auto'>
                     <h1 className='text-center text-4xl text-white font-bold'>重視綠電環保</h1>
