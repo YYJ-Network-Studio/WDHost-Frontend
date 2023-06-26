@@ -43,10 +43,12 @@ function Footer() {
                 <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                     <div className="md:flex md:justify-between">
                         <div className="mb-6 md:mb-0">
-                            <a href="https://flowbite.com/" className="flex items-center">
-                                <img src="../public/static/images/favicon.ico" className="h-8 mr-3 rounded" alt="FlowBite Logo" />
+                            <a href="https://waterdroplet.net" className="flex items-center">
+                                <img src="src/assets/favicon.ico" className="h-8 mr-3 rounded" alt="水滴託管 WD Host Logo" />
                                 <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">水滴託管 WD Host</span>
                             </a>
+                            <p className="text-gray-300 mt-4">服務時間：10:00 AM 至 8:00 PM</p>
+                            <a href="mailto:service@waterdroplet.net" className="text-gray-300">Email 聯絡：service@waterdroplet.net</a>
                         </div>
                         <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                             <div>
